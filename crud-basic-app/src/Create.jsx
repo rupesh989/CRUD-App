@@ -7,7 +7,17 @@ export default function Create() {
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
+  const navigate = useNavigate();
 
+    const users = useSelector((state) => state.users);
+
+    const dispatch = useDispatch();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        dispatch(addUser({ id: users[users.length - 1].id + 1, name, email }))
+        navigate('/')
+    }
   
     return (
         <div className=' d-flex w-100 vh-100 justify-content-center align-items-center'>
