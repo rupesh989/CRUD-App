@@ -13,5 +13,11 @@ export const userList = [
         name: "Shubhman gill",
         email: "shubhman77@gmail.com",
         id: 3
+    },
+    {
+        name: "Jasprit Bumrah",
+        email:"bumrah93@gamil
+            .com",
+        id:4
     }
 ]
